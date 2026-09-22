@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f0f12;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%;
+    background-color: rgba(15, 15, 18, 0.9);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #222;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #ff3e3e;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+    color: #ff3e3e;
+}
+
+/* Hero */
+.hero {
+    background: url('https://images.unsplash.com/photo-1617814076367-b759c7d7e738?q=80&w=1920&auto=format&fit=crop') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    color: #fff;
+    text-shadow: 0 4px 10px #ff3e3e;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    color: #fdfdfd;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.hero a {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    text-shadow: #ff3e3e 0 0 5px;
+}
+
+.hero a:hover {
+    color: #ff3e3e;
+}
+
+
+/* Sección Características */
+.características {
+    padding: 5rem 5%;
+    text-align: center;
+}
+
+.características h2 {
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.grid-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.card {
+    background-color: #18181c;
+    padding: 2.5rem 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #2a2a30;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #ff3e3e;
+}
+
+.card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    color: #aaa;
+    font-size: 0.95rem;
+}
+
+/* Cita Final */
+.quote-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #131316;
+    border-top: 1px solid #222;
+}
+
+.quote-section blockquote {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #e0e0e0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.quote-section blockquote span {
+    color: #ff3e3e;
+}
+
+.footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #131316;
+    border-top: 1px solid #222;
+}
+
+/* Responsivo para que se vea bien en otras pantallas */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    nav ul {
+        gap: 1rem;
+    }
+}
