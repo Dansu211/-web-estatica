@@ -58,7 +58,7 @@ nav a.active {
 }
 
 .hero {
-
+    padding-top: 140px;
     justify-content: center;
     align-items: center;
     text-align: center;
