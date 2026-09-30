@@ -76,7 +76,6 @@ nav a.active {
 .hero p {
     font-size: 2rem;
     color: #ffffff;
-    -webkit-text-stroke: 1px #0f0f12;
     padding: 0.1em;
     display: inline-block;
 }
@@ -98,38 +97,40 @@ nav a.active {
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
-.circuitos div {
+/* tarjetas en fila */
+.circuitos-grid {
     display: flex;
-    justify-content: center;
     gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.circuito1 {
+/* Tarjeta minimalista */
+.circuito-card {
     background-color: #18181c;
-    padding: 2.5rem 1.5rem;
-    border-radius: 8px;
     border: 1px solid #2a2a30;
+    border-radius: 8px;
+    padding: 2rem 2.5rem;
+    flex: 1;
+    min-width: 600px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
-.circuito1 h3 {
+.circuito-card:hover {
+    transform: translateY(-4px);
+    border-color: #ff3e3e;
+}
+
+.circuito-card h3 {
     color: #ff3e3e;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-    padding-top: 2rem;
-
+    font-size: 1.8rem;
+    font-weight: 700;
 }
 
-.circuito1 p {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-
-.circuito2 {
-    background-color: #18181c;
-    padding: 2.5rem 1.5rem;
-    border-radius: 8px;
-    border: 1px solid #2a2a30;
-    padding-top: 2rem;
-}
 
 .circuito2 h3 {
     color: #ff3e3e;
@@ -141,4 +142,20 @@ nav a.active {
 .circuito2 p {
     padding-top: 2rem;
     padding-bottom: 2rem;
+}
+
+.footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #131316;
+    border-top: 1px solid #222;
+}
+
+/* Trazada */
+.trazado-img {
+    width: 90px;
+    height: 60px;
+    object-fit: contain;
+    /* Vuelve el logo blanco y le da un leve resplandor */
+    filter: brightness(0) invert(1) drop-shadow(0 0 3px rgba(255, 255, 255, 0.3));
 }

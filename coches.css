@@ -85,6 +85,14 @@ nav a.active {
     margin: 0 auto;
 }
 
+.cars-section h2 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #fff;
+    text-shadow: 0 4px 10px #ff3e3e;
+    margin-bottom: 1rem;
+}
+
 .cars-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -182,6 +190,13 @@ nav a.active {
 .btn-card:hover {
     background-color: #ff3e3e;
     color: #ffffff;
+}
+
+.footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #131316;
+    border-top: 1px solid #222;
 }
 
 /* Responsivo */
